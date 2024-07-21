@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starships</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div><a href="./index.html">Back to index.</a></div>
+        <h1>Starships</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#technologies">Technologies</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="technologies">
+            <header>
+                <h2>Technologies</h2>
+            </header>
+
+            <main>
+                <section id="hyperdrive">
+                    <header>
+                        <h3>Hyperdrive</h3>
+                    </header>
+                    <main>
+                        <p>The only method of FTL travel known to humanity is the hyperdrive engine. Ships have
+                            hyperdrive systems rated in FTL units. A ship can travel [2<sup>(FTL - 2)</sup> + 1] parsecs
+                            per week. For simplicity, consult the following table.</p>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>FTL</th>
+                                    <th>Parsecs/week</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td align="center">1.5</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td align="center">2</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td align="center">3</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td align="center">5</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td align="center">9</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td align="center">17</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>Hyperdrives require two things: power, supplied by the starship's power plant; and "fuel,"
+                            typically a gas like hydrogen or helium, used to form a stable bubble around the ship in
+                            hyperspace. Most starships carry enough fuel for 1 week of travel at maximum FTL. A ship
+                            traveling at less than its maximum FTL can stay in hyperspace proportionally longer.</p>
+                        <blockquote>
+                            <strong>Example</strong>: The <em>Ticonderoga</em> has an FTL-3 hyperdrive system. It needs
+                            to travel 2 parsecs. At FTL-3, this would take 4&frac23; days, leaving the ship with
+                            2&frac13; days of fuel. However, at FTL-1, the journey takes over 9 days, but the
+                            <em>Ticonderoga</em> reaches its destination with nearly 4 days of fuel left.
+                        </blockquote>
+
+                        <div x-data="{
+                            max: 1, ftl: 1, distance: 0, 
+                            calcTime() {return this.distance / (2 ** (this.ftl - 2) + 1)},
+                            calcFuel() {return (1 - (this.ftl / this.max * this.calcTime()))}
+                        }" class="widget">
+                            <label>
+                                <span>Maximum FTL</span>
+                                <input type="number" x-model="max" min="1">
+                            </label>
+                            <label>
+                                <span>FTL Used</span>
+                                <input type="number" :max="max" min="1" x-model="ftl">
+                            </label>
+                            <label>
+                                <span>Distance traveled (parsecs)</span>
+                                <input type="number" min="1" x-model="distance">
+                            </label>
+                            <div>
+                                Time (days): <span x-text="calcTime()*7"></span>
+                            </div>
+                            <div>
+                                Fuel Remaining (days): <span x-text="calcFuel()*7"></span>
+                            </div>
+                        </div>
+                    </main>
+                </section>
+            </main>
+        </section>
+
+    </main>
+
+</body>
+
+</html>
