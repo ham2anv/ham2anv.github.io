@@ -1,29 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
 
 html {
-    color-scheme: light dark;
+  color-scheme: light dark;
 }
 
 body {
-    font-family: 'Inter';
-    max-width: min(100% - 3rem, 65ch);
-    margin-inline: auto;
-    line-height: 1.6;
+  font-family: "Inter";
+  max-width: min(100% - 3rem, 65ch);
+  margin-inline: auto;
+  line-height: 1.6;
 }
 
-/* section>header {
+.hidden {
+  display: none;
+}
+
+.template {
+  padding: 1em;
+
+  section {
     margin-block: 1em;
+  }
+}
 
-    h2, h3 {
-        margin-block: 0;
-    }
+.output {
+  margin-block-start: 2em;
+}
 
-
-} */
-
-.widget {
-    background-color: ButtonFace;
-    color: ButtonText;
-    padding: 1ch;
-    border: 1px solid ButtonBorder;
+summary {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
