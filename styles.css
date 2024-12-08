@@ -15,23 +15,52 @@ body {
   line-height: 1.6;
 }
 
-.hidden {
-  display: none;
+h1 {
+  text-align: center;
 }
 
-.template {
-  padding: 1em;
+blockquote,
+figure {
+  margin-inline: 0;
+  border-block-start: 0.4ch solid;
+  border-block-end: 0.2ch solid;
+}
 
-  section {
-    margin-block: 1em;
+blockquote {
+  padding-inline: 1em;
+}
+
+figure {
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    border-block-end: 0.2ch solid;
+    padding-block: 0.2ch;
+  }
+  aside {
+    
+    font-style: italic;
+
+    sup {
+      font-style: normal;
+    }
   }
 }
 
-.output {
-  margin-block-start: 2em;
+sup {
+  font-size: 0.7em;
 }
 
-summary {
-  font-size: 1.2rem;
-  font-weight: bold;
+table {
+  border-collapse: collapse;
+  width: 100%;
+
+  tr:nth-child(even) td {
+    border-block-end: 0.1ch dotted;
+  }
+}
+
+@page {
+  size: letter;
+  margin: 1in;
 }

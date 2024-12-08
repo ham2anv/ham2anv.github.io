@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Multiclass Characters</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="module" src="/index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="app">
+  <header>
+    <h1>Multiclass Characters</h1>
+  </header>
+  <main><p>A character may add new classes as he or she progresses in levels,
+thereby becoming a multiclass character. The class abilities from all of
+a character&#39;s classes combine to determine a multiclass character&#39;s
+overall abilities.</p>
+<section>
+<h2 id="class-and-level-features">Class and Level Features</h2>
+<p>As a general rule, the abilities of a multiclass character are the sum
+of the abilities provided by each of the character&#39;s classes.</p>
+<section>
+<h3 id="level">Level</h3>
+<p>&quot;Character level&quot; is a character&#39;s total number of levels. It is used to
+determine when feats and ability score increases are gained</p>
+<p>&quot;Class level&quot; is the character&#39;s level in a particular class. For a hero
+whose levels are all in the same class, character level and class level
+are the same.</p>
+</section>
+<section>
+<h3 id="hit-points">Hit Points</h3>
+<p>A hero gains hit points from each class as his or her class level
+increases, adding the new hit points to the previous total.</p>
+</section>
+<section>
+<h3 id="base-attack-bonus">Base Attack Bonus</h3>
+<p>Add the base attack bonuses for each class to get the hero&#39;s base attack
+bonus. A resulting value of +6 or higher provides the hero with multiple
+attacks.</p>
+<figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">Base Attack Bonus</th>
+<th align="center">Additional Attacks at</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">+6</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td align="center">+7</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td align="center">+8</td>
+<td align="center">+3</td>
+</tr>
+<tr>
+<td align="center">+9</td>
+<td align="center">+4</td>
+</tr>
+<tr>
+<td align="center">+10</td>
+<td align="center">+5</td>
+</tr>
+<tr>
+<td align="center">+11</td>
+<td align="center">+6/+1</td>
+</tr>
+<tr>
+<td align="center">+12</td>
+<td align="center">+7/+2</td>
+</tr>
+<tr>
+<td align="center">+13</td>
+<td align="center">+8/+3</td>
+</tr>
+<tr>
+<td align="center">+14</td>
+<td align="center">+9/+4</td>
+</tr>
+<tr>
+<td align="center">+15</td>
+<td align="center">+10/+5</td>
+</tr>
+<tr>
+<td align="center">+16</td>
+<td align="center">+11/+6/+1</td>
+</tr>
+<tr>
+<td align="center">+17</td>
+<td align="center">+12/+7/+2</td>
+</tr>
+<tr>
+<td align="center">+18</td>
+<td align="center">+13/+8/+3</td>
+</tr>
+<tr>
+<td align="center">+19</td>
+<td align="center">+14/+9/+4</td>
+</tr>
+<tr>
+<td align="center">+20</td>
+<td align="center">+15/+10/+5</td>
+</tr>
+</tbody></table>
+</figure>
+
+<p>To use multiple attacks in the same round, a character must use a full
+attack, which is a full-round action.</p>
+</section>
+<section>
+<h3 id="saving-throws">Saving Throws</h3>
+<p>Add the base save bonuses for each class together.</p>
+</section>
+<section>
+<h3 id="defense-bonus">Defense Bonus</h3>
+<p>Add the Defense bonuses for each class together.</p>
+</section>
+<section>
+<h3 id="reputation-bonus">Reputation Bonus</h3>
+<p>Add Reputation bonuses together.</p>
+</section>
+<section>
+<h3 id="skills">Skills</h3>
+<p>A multiclass hero uses his or her character level to determine the
+maximum ranks the hero can have in a skill. If a skill is a class skill
+for any of a multiclass hero&#39;s classes, then use character level to
+determine a skill&#39;s maximum rank. (The maximum rank for a class skill is
+3 + character level.)</p>
+<p>When a multiclass hero gains a level in a class, he or she spends that
+level&#39;s skill points as a member of that class. Only that class&#39;s class
+skills may be purchased as class skills. All other skills, including
+skills for another class the hero has levels in, are considered
+cross-class skills when ranks in those skills are purchased at this
+level.</p>
+</section>
+<section>
+<h3 id="class-features">Class Features</h3>
+<p>The character gets all class features (talents, bonus feats, or other
+special abilities) of all classes for the levels he or she possesses.</p>
+</section>
+<section>
+<h3 id="feats">Feats</h3>
+<p>A multiclass character receives a new feat every three character levels,
+regardless of individual class level. Taking one level in a new class
+does not entitle a character to receive the two feats that a beginning
+1st-level character gets.</p>
+</section>
+<section>
+<h3 id="ability-increases">Ability Increases</h3>
+<p>A multiclass character increases one ability score by +1 every four
+character levels, regardless of individual class level.</p>
+</section>
+</section>
+<section>
+<h2 id="adding-a-second-class">Adding a Second Class</h2>
+<p>When a character with one class gains a level, he or she may choose to
+increase the level of his or her current class or pick up a new class at
+1st level. This could be a basic class or, if the character qualifies
+for it, an advanced class.</p>
+<p>The character gains the 1st-level base attack bonus, base save bonuses,
+class skills, other class features of the new class, hit points of the
+appropriate die type, and the new class&#39;s number of skill points gained
+at each additional level (not that number x4, as is the case for a
+1st-level character).</p>
+<p>Picking up a new class is not exactly the same as starting a character
+in that class. When picking up a new class, a hero doesn&#39;t receive
+maximum hit points but should roll the new Hit Die.</p>
+</section>
+<section>
+<h2 id="advancing-a-level">Advancing a Level</h2>
+<p>Each time a multiclass character attains a new level, the hero either
+increases one of his or her current class levels by one or picks up a
+new class at 1st level.</p>
+<p>When a multiclass character increases one of his or her class levels by
+one, the character gets all the standard benefits that characters
+receive for attaining the new level in that class: more hit points,
+possible bonuses on attack rolls, Defense, and saving throws (depending
+on the class and the new level), a new class feature (as defined by the
+class), and new skill points.</p>
+<p>Skill points are spent according to the class that the multiclass
+character just advanced in. Skills are purchased at the cost appropriate
+for that class.</p>
+<p>In general, a character can have levels in as many different classes as
+there are classes.</p>
+</section>
+</main>
+</body>
+
+</html>

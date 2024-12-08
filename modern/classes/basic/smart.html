@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Smart Hero</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="module" src="/index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="app">
+  <header>
+    <h1>The Smart Hero</h1>
+  </header>
+  <main><h3 id="class-features">Class Features</h3>
+<p>All of the following are class features of the Smart hero.</p>
+<p><strong>Ability</strong>: Intelligence</p>
+<p><strong>Hit Die</strong>: 1d6</p>
+<p><strong>Action Points</strong>: Smart heroes gain a number of action points equal to
+5 + one-half their character level, rounded down, at 1st level and every
+time they attain a new level in this class.</p>
+<p><strong>Class Skills</strong>: The Smart hero&#39;s class skills (and the key ability for
+each skill) are:</p>
+<blockquote>
+<p>Computer Use (Int), Craft (chemical, electronic,
+mechanical, pharmaceutical, structural, visual art, writing) (Int),
+Decipher Script (Int), Demolitions (Int), Disable Device (Int), Forgery
+(Int), Investigate (Int), Knowledge (arcane lore, art, behavioral
+sciences, business, civics, current events, earth and life sciences,
+history, physical sciences, popular culture, streetwise, tactics,
+technology, theology and philosophy) (Int), Navigate (Int), Profession
+(Wis), Read/Write Language (none), Repair (Int), Research (Int), Search
+(Int), and Speak Language (none).</p>
+</blockquote>
+<p>Also, the starting occupation the hero selects can provide additional
+class skills to choose from.</p>
+<p><strong>Skill Points at 1st Level</strong>: (9 + Int modifier) x4.</p>
+<p><strong>Skill Points at Each Additional Level</strong>: 9 + Int modifier.</p>
+<figure>
+
+<figcaption>Table: The Smart Hero</figcaption>
+
+<table>
+<thead>
+<tr>
+<th>Class Level</th>
+<th align="center">Base Attack Bonus</th>
+<th align="center">Fort Save</th>
+<th align="center">Ref Save</th>
+<th align="center">Will Save</th>
+<th>Class Features</th>
+<th align="center">Defense Bonus</th>
+<th align="center">Reputation Bonus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1st</td>
+<td align="center">+0</td>
+<td align="center">+0</td>
+<td align="center">+0</td>
+<td align="center">+1</td>
+<td>Talent</td>
+<td align="center">+0</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td>2nd</td>
+<td align="center">+1</td>
+<td align="center">+0</td>
+<td align="center">+0</td>
+<td align="center">+2</td>
+<td>Bonus feat</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td>3rd</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+<td align="center">+2</td>
+<td>Talent</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td>4th</td>
+<td align="center">+2</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+<td align="center">+2</td>
+<td>Bonus feat</td>
+<td align="center">+1</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td>5th</td>
+<td align="center">+2</td>
+<td align="center">+1</td>
+<td align="center">+1</td>
+<td align="center">+3</td>
+<td>Talent</td>
+<td align="center">+2</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td>6th</td>
+<td align="center">+3</td>
+<td align="center">+2</td>
+<td align="center">+2</td>
+<td align="center">+3</td>
+<td>Bonus feat</td>
+<td align="center">+2</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td>7th</td>
+<td align="center">+3</td>
+<td align="center">+2</td>
+<td align="center">+2</td>
+<td align="center">+4</td>
+<td>Talent</td>
+<td align="center">+2</td>
+<td align="center">+3</td>
+</tr>
+<tr>
+<td>8th</td>
+<td align="center">+4</td>
+<td align="center">+2</td>
+<td align="center">+2</td>
+<td align="center">+4</td>
+<td>Bonus feat</td>
+<td align="center">+3</td>
+<td align="center">+3</td>
+</tr>
+<tr>
+<td>9th</td>
+<td align="center">+4</td>
+<td align="center">+3</td>
+<td align="center">+3</td>
+<td align="center">+4</td>
+<td>Talent</td>
+<td align="center">+3</td>
+<td align="center">+3</td>
+</tr>
+<tr>
+<td>10th</td>
+<td align="center">+5</td>
+<td align="center">+3</td>
+<td align="center">+3</td>
+<td align="center">+5</td>
+<td>Bonus feat</td>
+<td align="center">+3</td>
+<td align="center">+4</td>
+</tr>
+</tbody></table>
+</figure>
+
+<h3 id="starting-feats">Starting Feats</h3>
+<p>In addition to the two feats all characters get at 1st level, a Smart
+hero begins play with the Simple Weapons Proficiency feat.</p>
+<h3 id="talents">Talents</h3>
+<p>At 1st, 3rd, 5th, 7th, and 9th level, the Smart hero selects a talent
+from the following talent trees. Some trees have a set order that must
+be followed, while others provide a list to choose from. As long as the
+hero qualifies, he or she can select freely from any and all talent
+trees. No talent can be selected more than once unless expressly
+indicated.</p>
+<h3 id="research-talent-tree">Research Talent Tree</h3>
+<p>The Smart hero has a natural aptitude for study and fact-finding. These
+talents can be selected in any order.</p>
+<p><strong>Savant</strong>: Select one of the skills listed in the following paragraph.
+The hero must have ranks in the skill if it is Trained Only. The Smart
+hero gets to add a bonus equal to his or her Smart level when making
+checks with that skill. A Smart hero can take this talent multiple
+times; each time it applies to a different skill.</p>
+<p>Computer Use, Craft (any single skill), Decipher Script, Demolitions,
+Disable Device, Forgery, Investigate, Knowledge (any single skill),
+Navigate, Repair, Research, Search.</p>
+<p><strong>Linguist</strong>: With this talent, the Smart hero becomes a master
+linguist. Whenever the hero encounters a new language, either spoken or
+written, that he or she does not know the Smart hero can make an
+Intelligence check to determine if he or she can understand it. The
+check is made with a bonus equal to the hero&#39;s Smart level. For a
+written language, the bonus applies to a Decipher Script check instead.</p>
+<p>The DC for the check depends on the situation: DC 15 if the language is
+in the same group as a language the hero has as a Read/Write Language or
+Speak Language skill; DC 20 if the language is unrelated to any other
+languages the hero knows; and DC 25 if the language is ancient or
+unique. With this special ability, a Smart hero can glean enough meaning
+from a conversation or document to ascertain the basic message, but this
+ability in no way simulates actually being able to converse or fluently
+read and write in a given language.</p>
+<p>A single check covers roughly one minute of a spoken language or one
+page of a written language.</p>
+<p><strong>Prerequisite</strong>: At least 1 rank in either Read/Write Language or Speak
+Language for each of three different languages.</p>
+<h3 id="strategy-talent-tree">Strategy Talent Tree</h3>
+<p>The Smart hero has the brainpower to see solutions in most situations.
+These talents can be selected in any order, but before the hero can
+select a talent from this tree he or she must have previously selected
+at least one talent from the Research Talent Tree.</p>
+<p><strong>Exploit Weakness</strong>: After 1 round of combat, the Smart hero can
+designate one opponent and try to find ways to gain an advantage by
+using brains over brawn. The Smart hero uses a move action and makes an
+Intelligence check (DC 15) with a bonus equal to his or her Smart level.
+If the check succeeds, for the rest of the combat the Smart hero uses
+his or her Intelligence bonus instead of either Strength or Dexterity
+bonus on attack rolls as the hero finds ways to outthink his opponent
+and notices weaknesses in his opponent&#39;s fighting style.</p>
+<p><strong>Prerequisite</strong>: One talent from the Research Talent Tree.</p>
+<p><strong>Plan</strong>: Prior to an encounter the Smart hero can develop a plan of
+action to handle the situation. Using this talent requires preparation;
+a Smart hero can&#39;t use this talent when surprised or otherwise
+unprepared for a particular situation. Creating a plan requires 1
+minute.</p>
+<p>After creating the plan the Smart hero makes an Intelligence check (DC 10) with a bonus equal to his or her Smart level. The result of the
+check provides the Smart hero and allies with a circumstance bonus. A
+Smart hero can&#39;t take 10 or 20 when making this check.</p>
+<figure>
+
+<table>
+<thead>
+<tr>
+<th align="center">Check Result</th>
+<th align="center">Bonus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">9 or lower</td>
+<td align="center">+0 (check failed)</td>
+</tr>
+<tr>
+<td align="center">10--14</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td align="center">15--24</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td align="center">25 or higher</td>
+<td align="center">+3</td>
+</tr>
+</tbody></table>
+</figure>
+
+<p>This bonus can be applied to all skill checks and attack rolls made by
+the Smart hero and his or her allies, but the bonus only lasts for the
+first 3 rounds after making the plan. After that time, reduce the bonus
+by 1 point (to a minimum of +0) for every additional round the situation
+continues, as the vagaries of circumstance begin to unravel even the
+best-laid plans.</p>
+<p><strong>Prerequisite</strong>: One talent from the Research Talent Tree.</p>
+<p><strong>Trick</strong>: The Smart hero has the ability to temporarily confuse a
+target through the use of ploy and deception. The target must have an
+Intelligence score of 3 or higher to be susceptible to a trick, must be
+within 30 feet of the hero, and must be able to hear and understand the
+hero.</p>
+<p>To play a trick on a target, the hero must use a full-round action and
+make an Intelligence check (DC 15), adding his or her Smart level as a
+bonus. If the Intelligence check succeeds, the target can try to think
+quickly and ignore the trick.</p>
+<p>The target resists the trick by making a Will saving throw (DC 10 +
+Smart hero&#39;s class level + Smart hero&#39;s Int bonus). If the saving throw
+fails, the target becomes dazed (unable to act, but can defend normally)
+for 1 round.</p>
+<p>A trick can only be played on a particular target once per encounter.
+After the first trick in an encounter, whether the attempt succeeds or
+not, that target becomes wary and immune to such ploys. This is a
+mind-affecting ability.</p>
+<p><strong>Prerequisite</strong>: One talent from the Research Talent Tree.</p>
+<h3 id="bonus-feats">Bonus Feats</h3>
+<p>At 2nd, 4th, 6th, 8th, and 10th level, the Smart hero gains a bonus
+feat. This feat must be selected from the following list, and the Smart
+hero must meet any prerequisites.</p>
+<blockquote>
+<p>Builder, Cautious, Combat Expertise, Educated, Gearhead, Improved
+Disarm, Improved Trip, Iron Will, Lightning Reflexes, Meticulous,
+Studious, Vehicle Expert, Weapon Focus.</p>
+</blockquote>
+</main>
+</body>
+
+</html>

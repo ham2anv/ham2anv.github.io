@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Fast Hero</title>
+  <link rel="stylesheet" href="/styles.css" />
+  <script type="module" src="/index.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="app">
+  <header>
+    <h1>The Fast Hero</h1>
+  </header>
+  <main><p><strong>Ability</strong>: Dexterity</p>
+<p><strong>Hit Die</strong>: 1d8</p>
+<p><strong>Action Points</strong>: Fast heroes gain a number of action points equal to
+5 + one-half their character level, rounded down, at 1st level and every
+time they attain a new level in this class.</p>
+<p><strong>Class Skills</strong>: The Fast hero&#39;s class skills (and the key ability for
+each skill) are: Balance (Dex), Craft (mechanical) (Int), Drive (Dex),
+Escape Artist (Dex), Hide (Dex), Knowledge (current events, popular
+culture, streetwise) (Int), Move Silently (Dex), Pilot (Dex), Profession
+(Wis), Read/Write Language (none), Ride (Dex), Sleight of Hand (Dex),
+Speak Language (none), and Tumble (Dex).</p>
+<p>Also, the starting occupation the character selects can provide
+additional class skills to choose from.</p>
+<p><strong>Skill Points at 1st Level</strong>: (5 + Int modifier) x4.</p>
+<p><strong>Skill Points at Each Additional Level</strong>: 5 + Int modifier.</p>
+<figure>
+
+<figcaption>Table: The Fast Hero</figcaption>
+
+<table>
+<thead>
+<tr>
+<th>Class Level</th>
+<th align="center">Base Attack Bonus</th>
+<th align="center">Fort Save</th>
+<th align="center">Will Save</th>
+<th align="center">Ref Save</th>
+<th>Class Features</th>
+<th align="center">Defense Bonus</th>
+<th align="center">Reputation Bonus</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1st</td>
+<td align="center">+0</td>
+<td align="center">+0</td>
+<td align="center">+1</td>
+<td align="center">+0</td>
+<td>Talent</td>
+<td align="center">+3</td>
+<td align="center">+0</td>
+</tr>
+<tr>
+<td>2nd</td>
+<td align="center">+1</td>
+<td align="center">+0</td>
+<td align="center">+2</td>
+<td align="center">+0</td>
+<td>Bonus feat</td>
+<td align="center">+4</td>
+<td align="center">+0</td>
+</tr>
+<tr>
+<td>3rd</td>
+<td align="center">+2</td>
+<td align="center">+1</td>
+<td align="center">+2</td>
+<td align="center">+1</td>
+<td>Talent</td>
+<td align="center">+4</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td>4th</td>
+<td align="center">+3</td>
+<td align="center">+1</td>
+<td align="center">+2</td>
+<td align="center">+1</td>
+<td>Bonus feat</td>
+<td align="center">+5</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td>5th</td>
+<td align="center">+3</td>
+<td align="center">+1</td>
+<td align="center">+3</td>
+<td align="center">+1</td>
+<td>Talent</td>
+<td align="center">+5</td>
+<td align="center">+1</td>
+</tr>
+<tr>
+<td>6th</td>
+<td align="center">+4</td>
+<td align="center">+2</td>
+<td align="center">+3</td>
+<td align="center">+2</td>
+<td>Bonus feat</td>
+<td align="center">+6</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td>7th</td>
+<td align="center">+5</td>
+<td align="center">+2</td>
+<td align="center">+4</td>
+<td align="center">+2</td>
+<td>Talent</td>
+<td align="center">+6</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td>8th</td>
+<td align="center">+6/+1</td>
+<td align="center">+2</td>
+<td align="center">+4</td>
+<td align="center">+2</td>
+<td>Bonus feat</td>
+<td align="center">+7</td>
+<td align="center">+2</td>
+</tr>
+<tr>
+<td>9th</td>
+<td align="center">+6/+1</td>
+<td align="center">+3</td>
+<td align="center">+4</td>
+<td align="center">+3</td>
+<td>Talent</td>
+<td align="center">+7</td>
+<td align="center">+3</td>
+</tr>
+<tr>
+<td>10th</td>
+<td align="center">+7/+2</td>
+<td align="center">+3</td>
+<td align="center">+5</td>
+<td align="center">+3</td>
+<td>Bonus feat</td>
+<td align="center">+8</td>
+<td align="center">+3</td>
+</tr>
+</tbody></table>
+</figure>
+
+<section>
+<h2 id="starting-feats">Starting Feats</h2>
+<p>In addition to the two feats all characters get at 1st level, a Fast
+hero begins play with the Simple Weapons Proficiency feat.</p>
+</section>
+<section>
+<h2 id="class-features">Class Features</h2>
+<p>All of the following are class features of the Fast hero.</p>
+</section>
+<section>
+<h2 id="talents">Talents</h2>
+<p>At 1st, 3rd, 5th, 7th, and 9th level, the Fast hero selects a talent
+from the following talent trees. Some trees have a set order that must
+be followed, while others provide a list to choose from. As long as the
+hero qualifies, he or she can select freely from any and all talent
+trees. No talent can be selected more than once unless expressly
+indicated.</p>
+<section>
+<h3 id="defensive-talent-tree">Defensive Talent Tree</h3>
+<p>The Fast hero gains the ability to improve his or her innate defensive
+talents as the hero attains new levels.</p>
+<p><strong>Evasion</strong>: If the Fast hero is exposed to any effect that normally
+allows a character to attempt a Reflex saving throw for half damage, the
+Fast hero suffers no damage if he or she makes a successful saving
+throw. Evasion can only be used when wearing light armor or no armor.</p>
+<p><strong>Uncanny Dodge 1</strong>: The Fast hero retains his or her Dexterity bonus to
+Defense regardless of being caught flat-footed or struck by a hidden
+attacker. (The hero still loses his or her Dexterity bonus to Defense if
+the hero is immobilized.)</p>
+<p><strong>Prerequisite</strong>: Evasion.</p>
+<p><strong>Uncanny Dodge 2</strong>: The Fast hero can no longer be flanked; the hero
+can react to opponents on opposite sides of him or herself as easily as
+he or she can react to a single attacker.</p>
+<p><strong>Prerequisites</strong>: Evasion, uncanny dodge 1.</p>
+<p><strong>Defensive Roll</strong>: The Fast hero can roll with a potentially lethal
+attack to take less damage from it. When the Fast hero would be reduced
+to 0 hit points or less by damage in combat (from a ranged or melee
+attack), the Fast hero can attempt to roll with the damage.</p>
+<p>A Fast hero spends 1 action point to use this talent. Once the point is
+spent, the hero makes a Reflex saving throw (DC = damage dealt). If the
+save succeeds, he or she takes only half damage. The Fast hero must be
+able to react to the attack to execute a defensive roll---if the hero is
+immobilized, he or she can&#39;t use this talent.</p>
+<p>Since this effect would not normally allow a character to make a Reflex
+save for half damage, the Fast hero&#39;s evasion talent doesn&#39;t apply to
+the defensive roll.</p>
+<p><strong>Prerequisites</strong>: Evasion, uncanny dodge 1.</p>
+<p><strong>Opportunist</strong>: The Fast hero can spend 1 action point to use this
+talent. Once the point is spent, the hero can make an attack of
+opportunity against an opponent who has just been struck for damage in
+melee by another character. This attack counts as the Fast hero&#39;s attack
+of opportunity for that round. Even a Fast hero with the Combat Reflexes
+feat can&#39;t use this talent more than once per round.</p>
+<p><strong>Prerequisite</strong>: Evasion.</p>
+</section>
+<section>
+<h3 id="increased-speed-talent-tree">Increased Speed Talent Tree</h3>
+<p>The Fast hero can increase his or her natural base speed.</p>
+<p><strong>Increased Speed</strong>: The Fast hero&#39;s base speed increases by 5 feet.</p>
+<p><strong>Improved Increased Speed</strong>: The Fast hero&#39;s base speed increases by 5
+feet. This talent stacks with increased speed (10 feet total).</p>
+<p><strong>Prerequisite</strong>: Increased speed.</p>
+<p><strong>Advanced Increased Speed</strong>: The Fast hero&#39;s base speed increases by 5
+feet. This talent stacks with increased speed and improved increased
+speed (15 feet total).</p>
+<p><strong>Prerequisites</strong>: Increased speed, improved increased speed.</p>
+</section>
+</section>
+<section>
+<h2 id="bonus-feats">Bonus Feats</h2>
+<p>At 2nd, 4th, 6th, 8th, and 10th level, the Fast hero gains a bonus feat.
+This feat must be selected from the following list, and the Fast hero
+must meet any prerequisites.</p>
+<blockquote>
+<p>Acrobatic, Combat Expertise, Combat Throw, Defensive Martial Arts,
+Double Tap, Elusive Target, Focused, Improved Disarm, Mobility, Personal
+Firearms Proficiency, Point Blank Shot, Stealthy, Weapon Finesse.</p>
+</blockquote>
+</section>
+</main>
+</body>
+
+</html>
