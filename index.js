@@ -17,6 +17,7 @@ function gurpsRoll(level) {
     case 5:
     case 6:
       degree = level >= result + 10 ? "critical success!" : "success.";
+      break
     case 17:
       degree = level <= 16 ? "critical failure!" : "failure.";
       break;
