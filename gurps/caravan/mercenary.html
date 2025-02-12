@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Suwalla, the mercenary</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/index.js"></script><script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script></head><body x-data="app"><header><h1>Suwalla, the mercenary</h1></header><main><figure>
+
+<p><img src="./sawali.png" alt=""></p>
+</figure>
+
+<section>
+<h2 id="attributes">Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ST</strong> <span x-data="success(12)"></span></td>
+<td><strong>DX</strong> <span x-data="success(12)"></span></td>
+<td><strong>IQ</strong> <span x-data="success(11)"></span></td>
+<td><strong>HT</strong> <span x-data="success(12)"></span></td>
+</tr>
+<tr>
+<td>HP 12</td>
+<td><strong>Will</strong> <span x-data="success(11)"></span></td>
+<td><strong>Per</strong> <span x-data="success(11)"></span></td>
+<td>FP 13</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Damage thr <span x-data="damage({dice: 1, adds: -1})"></span> / sw <span x-data="damage({dice: 1, adds: 2})"></span></li>
+<li>Basic Lift 29 lbs.</li>
+<li>Basic Speed 6.00</li>
+<li>Basic Move 6</li>
+<li>DR 2 (arms, torso, groin, legs)</li>
+</ul>
+</section>
+<section>
+<h2 id="social-background">Social Background</h2>
+<ul>
+<li><em>Cultural Familiarities</em><ul>
+<li>Lantaran (Native)</li>
+</ul>
+</li>
+<li><em>Languages</em><ul>
+<li>Lantrai (Native)</li>
+<li>Shandassa (Accented Spoken)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<h2 id="advantages">Advantages</h2>
+<ul>
+<li>Combat Reflexes</li>
+<li>High Pain Threshold</li>
+</ul>
+<section>
+<h3 id="perks">Perks</h3>
+<ul>
+<li>Weapon Bond (Axe/Mace)</li>
+</ul>
+</section>
+</section>
+<section>
+<h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>Cannot Harm Innocents </li>
+<li>Honesty <span x-data="success(12)"></span></li>
+<li>Soldier&#39;s Code of Honor</li>
+</ul>
+</section>
+<section>
+<h2 id="skills">Skills</h2>
+<ul>
+<li>Armoury (Melee Weapons) <span x-data="success(10)"></span></li>
+<li>Axe/Mace <span x-data="success(14)"></span></li>
+<li>Bow <span x-data="success(12)"></span></li>
+<li>Detect Lies <span x-data="success(10)"></span></li>
+<li>Diplomacy <span x-data="success(10)"></span></li>
+<li>Fast-Draw (Arrow) <span x-data="success(13)"></span></li>
+<li>Fast-Draw (Sword) <span x-data="success(13)"></span></li>
+<li>Riding (Camel) <span x-data="success(11)"></span></li>
+<li>Shield (Shield) <span x-data="success(14)"></span></li>
+<li>Soldier <span x-data="success(10)"></span></li>
+<li>Survival (Desert) <span x-data="success(10)"></span></li>
+</ul>
+</section>
+<section>
+<h2 id="melee-attacks">Melee Attacks</h2>
+<table>
+<thead>
+<tr>
+<th>Attack</th>
+<th align="center">Skill</th>
+<th align="center">Damage</th>
+<th align="center">Reach</th>
+<th align="center">Parry</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bite</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -2})"></span> cr</td>
+<td align="center">C</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Kick</td>
+<td align="center"><span x-data="success(10)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -1})"></span> cr</td>
+<td align="center">C,1</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Punch</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -2})"></span> cr</td>
+<td align="center">C</td>
+<td align="center"><span x-data="success(10)"></span></td>
+</tr>
+<tr>
+<td>Mace, 1H</td>
+<td align="center"><span x-data="success(15)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 5})"></span> cr</td>
+<td align="center">1</td>
+<td align="center"><span x-data="success(11)"></span>U</td>
+</tr>
+<tr>
+<td>Mace, 2H</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 6})"></span> cr</td>
+<td align="center">1</td>
+<td align="center"><span x-data="success(10)"></span>U</td>
+</tr>
+<tr>
+<td>Shield Bash</td>
+<td align="center"><span x-data="success(14)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -1})"></span> cr</td>
+<td align="center">1</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+</section>
+<section>
+<h2 id="ranged-attacks">Ranged Attacks</h2>
+<table>
+<thead>
+<tr>
+<th>Attack</th>
+<th align="center">Skill</th>
+<th align="center">Damage</th>
+<th align="center">Acc</th>
+<th align="center">Range</th>
+<th align="center">RoF</th>
+<th align="center">Shots</th>
+<th align="center">Bulk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Mace</td>
+<td align="center"><span x-data="success(9)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 5})"></span> cr</td>
+<td align="center">1</td>
+<td align="center">6 / 12</td>
+<td align="center">1</td>
+<td align="center">T(1)</td>
+<td align="center">-4</td>
+</tr>
+<tr>
+<td>Short Bow</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -1})"></span> imp</td>
+<td align="center">1</td>
+<td align="center">180 / 240</td>
+<td align="center">1</td>
+<td align="center">1(2)</td>
+<td align="center">-6</td>
+</tr>
+</tbody></table>
+</section>
+<section>
+<h2 id="equipment">Equipment</h2>
+<ul>
+<li>Armor<ul>
+<li>Light Layered Cloth (Arms &amp; Torso)</li>
+<li>Medium Leather (Groin &amp; Legs)</li>
+</ul>
+</li>
+<li>Mace</li>
+<li>Medium Shield, Light</li>
+<li>Short Bow</li>
+<li>Shoulder Quiver with 12 arrows</li>
+<li>Small Backpack<ul>
+<li>Blanket</li>
+<li>Personal Basics</li>
+<li>Wineskin</li>
+</ul>
+</li>
+</ul>
+</section>
+</main><footer x-data="toaster" x-bind="toasts" class="toast"><template x-for="toast in queue"><div x-bind="toast"></div></template></footer></body></html>
