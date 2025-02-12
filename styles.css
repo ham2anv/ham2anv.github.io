@@ -31,14 +31,21 @@ blockquote {
 }
 
 figure {
+
+  max-width: 100%;
+
+  img {
+    max-width: 100%;
+  }
+
   figcaption {
     text-align: center;
     font-style: italic;
     border-block-end: 0.2ch solid;
     padding-block: 0.2ch;
   }
+
   aside {
-    
     font-style: italic;
 
     sup {
@@ -60,7 +67,82 @@ table {
   }
 }
 
+button {
+  --button-color: skyblue;
+
+  cursor: pointer;
+
+  padding: 1ch 2ch;
+  border: none;
+  border-radius: 1ch;
+
+  font-family: inherit;
+  
+  background: linear-gradient(
+    to bottom right, 
+    color-mix(in srgb, var(--button-color), ButtonFace 95%), 
+    color-mix(in srgb, var(--button-color), ButtonFace 80%)
+  );
+
+  &:disabled {
+    --button-color: red;
+  }
+}
+
+span[x-data] button {
+  padding: 0.3ch 0.7ch;
+}
+
 @page {
   size: letter;
   margin: 1in;
+}
+
+.breadcrumbs ul {
+  list-style: none;
+  padding-inline: 0;
+  margin-inline: 0;
+  display: flex;
+
+  li + li::before {
+    content: ">";
+    padding-inline: 1ch;
+  }
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  gap: 1ch;
+
+  button {
+    padding: 0.3em 0.8em;
+  }
+}
+
+.toast {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  min-height: 2rem;
+
+  * {
+    padding: 0.5ch 1ch;
+    margin: 1ch;
+    border-radius: 1ch;
+    background-color: #AFA;
+    outline: 2px solid #0F0;
+  }
+
+  .error, .failure {
+    background-color: #FAA;
+    outline-color: #F00;
+  }
+  
+  .damage {
+    background-color: #AAF;
+    outline-color: #00F;
+
+  }
 }
