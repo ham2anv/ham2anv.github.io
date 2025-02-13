@@ -1,0 +1,179 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Amiri, the scout</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/index.js" defer></script><script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script></head><body x-data="app"><header><h1>Amiri, the scout</h1></header><main><figure>
+
+<p><img src="./amiri.jpg" alt=""></p>
+</figure>
+
+<section>
+<h2 id="attributes">Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>ST</strong> <span x-data="success(10)"></span></td>
+<td><strong>DX</strong> <span x-data="success(11)"></span></td>
+<td><strong>IQ</strong> <span x-data="success(12)"></span></td>
+<td><strong>HT</strong> <span x-data="success(12)"></span></td>
+</tr>
+<tr>
+<td>HP 10</td>
+<td><strong>Will</strong> <span x-data="success(12)"></span></td>
+<td><strong>Per</strong> <span x-data="success(13)"></span></td>
+<td>FP 12</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Damage thr <span x-data="damage({dice: 1, adds: -2})"></span> / sw <span x-data="damage({dice: 1, adds: 0})"></span></li>
+<li>Basic Lift 20 lbs.</li>
+<li>Basic Speed 5.75</li>
+<li>Basic Move 5</li>
+<li>DR 1 (everywhere but eyes and face)</li>
+</ul>
+</section>
+<section>
+<h2 id="social-background">Social Background</h2>
+<ul>
+<li><em>Cultural Familiarities</em><ul>
+<li>Lantaran (Native)</li>
+</ul>
+</li>
+<li><em>Languages</em><ul>
+<li>Lantrai (Native)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<h2 id="advantages">Advantages</h2>
+<ul>
+<li>Fit</li>
+<li>Outdoorsman 1</li>
+</ul>
+</section>
+<section>
+<h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>Loner <span x-data="success(12)"></span></li>
+<li>Overconfidence <span x-data="success(12)"></span></li>
+<li>Sense of Duty to companions</li>
+</ul>
+</section>
+<section>
+<h2 id="skills">Skills</h2>
+<ul>
+<li>Camouflage <span x-data="success(13)"></span></li>
+<li>Fast-Talk <span x-data="success(11)"></span></li>
+<li>Hiking <span x-data="success(11)"></span></li>
+<li>Holdout <span x-data="success(11)"></span></li>
+<li>Naturalist <span x-data="success(11)"></span></li>
+<li>Navigation (Land) <span x-data="success(12)"></span></li>
+<li>Observation <span x-data="success(12)"></span></li>
+<li>Poisons <span x-data="success(10)"></span></li>
+<li>Riding (Camel) <span x-data="success(11)"></span></li>
+<li>Scrounging <span x-data="success(13)"></span></li>
+<li>Spear <span x-data="success(14)"></span></li>
+<li>Stealth <span x-data="success(12)"></span></li>
+<li>Survival (Desert) <span x-data="success(14)"></span></li>
+<li>Thrown Weapon (Spear) <span x-data="success(14)"></span></li>
+<li>Tracking <span x-data="success(14)"></span></li>
+<li>Traps <span x-data="success(11)"></span></li>
+</ul>
+</section>
+<section>
+<h2 id="melee-attacks">Melee Attacks</h2>
+<table>
+<thead>
+<tr>
+<th>Attack</th>
+<th align="center">Skill</th>
+<th align="center">Damage</th>
+<th align="center">Reach</th>
+<th align="center">Parry</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Bite</td>
+<td align="center"><span x-data="success(11)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -3})"></span> cr</td>
+<td align="center">C</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Kick</td>
+<td align="center"><span x-data="success(9)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -2})"></span> cr</td>
+<td align="center">C,1</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Punch</td>
+<td align="center"><span x-data="success(11)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -3})"></span> cr</td>
+<td align="center">C</td>
+<td align="center"><span x-data="success(8)"></span></td>
+</tr>
+<tr>
+<td>Spear, 1H</td>
+<td align="center"><span x-data="success(14)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 1})"></span> imp</td>
+<td align="center">1</td>
+<td align="center"><span x-data="success(10)"></span></td>
+</tr>
+<tr>
+<td>Spear, 2H</td>
+<td align="center"><span x-data="success(14)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 2})"></span> imp</td>
+<td align="center">1,2*</td>
+<td align="center"><span x-data="success(10)"></span></td>
+</tr>
+</tbody></table>
+</section>
+<section>
+<h2 id="ranged-attacks">Ranged Attacks</h2>
+<table>
+<thead>
+<tr>
+<th>Attack</th>
+<th align="center">Skill</th>
+<th align="center">Damage</th>
+<th align="center">Acc</th>
+<th align="center">Range</th>
+<th align="center">RoF</th>
+<th align="center">Shots</th>
+<th align="center">Bulk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Spear</td>
+<td align="center"><span x-data="success(14)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 2})"></span> imp</td>
+<td align="center">2</td>
+<td align="center">10 / 15</td>
+<td align="center">1</td>
+<td align="center">T(1)</td>
+<td align="center">-3</td>
+</tr>
+</tbody></table>
+</section>
+<section>
+<h2 id="equipment">Equipment</h2>
+<ul>
+<li>Small Backpack<ul>
+<li>Blanket</li>
+<li>Personal Basics</li>
+<li>Wineskin</li>
+</ul>
+</li>
+<li>Armor<ul>
+<li>Cloth Armor Suit</li>
+</ul>
+</li>
+<li>Spear; Qty:3</li>
+</ul>
+</section>
+</main><footer x-data="toaster" x-bind="toasts" class="toast"><template x-for="(toast, index) in queue"><div x-bind="toast"></div></template></footer></body></html>

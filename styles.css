@@ -131,18 +131,16 @@ span[x-data] button {
     padding: 0.5ch 1ch;
     margin: 1ch;
     border-radius: 1ch;
-    background-color: #AFA;
+    background-color: white;
     outline: 2px solid #0F0;
   }
 
-  .error, .failure {
-    background-color: #FAA;
+    .error,
+    .failure {
     outline-color: #F00;
   }
   
-  .damage {
-    background-color: #AAF;
+    .damage {
     outline-color: #00F;
-
   }
 }

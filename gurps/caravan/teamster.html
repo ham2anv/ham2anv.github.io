@@ -1,0 +1,169 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Croy, the teamster</title><link rel="stylesheet" href="/styles.css"><script type="module" src="/index.js" defer></script><script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script></head><body x-data="app"><header><h1>Croy, the teamster</h1></header><main><figure>
+
+<p><img src="./croy.png" alt=""></p>
+</figure>
+
+<section>
+<h2 id="attributes">Attributes</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>ST <span x-data="success(12)"></span></td>
+<td>DX <span x-data="success(11)"></span></td>
+<td>IQ <span x-data="success(11)"></span></td>
+<td>HT <span x-data="success(11)"></span></td>
+</tr>
+<tr>
+<td>HP 12</td>
+<td>Will <span x-data="success(12)"></span></td>
+<td>Per <span x-data="success(12)"></span></td>
+<td>FP 11</td>
+</tr>
+</tbody></table>
+<ul>
+<li>Damage thr <span x-data="damage({dice: 1, adds: -1})"></span> / sw <span x-data="damage({dice: 1, adds: 2})"></span></li>
+<li>Basic Lift 29</li>
+<li>Basic Speed 5.5</li>
+<li>Basic Move 5</li>
+</ul>
+</section>
+<section>
+<h2 id="social-background">Social Background</h2>
+<ul>
+<li>Cultural Familiarities<ul>
+<li>Lantaran (Native)</li>
+</ul>
+</li>
+<li>Languages<ul>
+<li>Ayuni Trade Pidgin (Broken; Spoken)</li>
+<li>Lantrai (Native)</li>
+<li>Nomic (Broken; Spoken)</li>
+</ul>
+</li>
+</ul>
+</section>
+<section>
+<h2 id="advantages">Advantages</h2>
+<ul>
+<li>Animal Friend 1</li>
+<li>Attractive</li>
+</ul>
+</section>
+<section>
+<h2 id="disadvantages">Disadvantages</h2>
+<ul>
+<li>Chummy</li>
+<li>Sense of Duty to animals</li>
+</ul>
+</section>
+<section>
+<h2 id="skills">Skills</h2>
+<ul>
+<li>Animal Handling (Bovines) <span x-data="success(12)"></span></li>
+<li>Animal Handling (Camels) <span x-data="success(12)"></span></li>
+<li>Brawling <span x-data="success(14)"></span></li>
+<li>Carousing <span x-data="success(12)"></span></li>
+<li>Crossbow <span x-data="success(12)"></span></li>
+<li>Diplomacy <span x-data="success(10)"></span></li>
+<li>Fast-Talk <span x-data="success(11)"></span></li>
+<li>Merchant <span x-data="success(10)"></span></li>
+<li>Packing <span x-data="success(11)"></span></li>
+<li>Riding (Camel) <span x-data="success(12)"></span></li>
+<li>Teamster (Oxen) <span x-data="success(12)"></span></li>
+<li>Whip <span x-data="success(12)"></span></li>
+<li>Wrestling <span x-data="success(12)"></span></li>
+</ul>
+</section>
+<section>
+<h2 id="melee-attacks">Melee Attacks</h2>
+<table>
+<thead>
+<tr>
+<th>Attack</th>
+<th align="center">Skill</th>
+<th align="center">Damage</th>
+<th align="center">Reach</th>
+<th align="center">Parry</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Punch</td>
+<td align="center"><span x-data="success(14)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -1})"></span> cr</td>
+<td align="center">C</td>
+<td align="center"><span x-data="success(10)"></span></td>
+</tr>
+<tr>
+<td>Bite</td>
+<td align="center"><span x-data="success(14)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -1})"></span> cr</td>
+<td align="center">C</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Kick</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1})"></span> cr</td>
+<td align="center">C,1</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>Light Whip</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: -4})"></span> cr</td>
+<td align="center">1-2*</td>
+<td align="center"><span x-data="success(7)"></span>U</td>
+</tr>
+</tbody></table>
+</section>
+<section>
+<h2 id="ranged-attacks">Ranged Attacks</h2>
+<table>
+<thead>
+<tr>
+<th>Attack</th>
+<th align="center">Skill</th>
+<th align="center">Damage</th>
+<th align="center">Acc</th>
+<th align="center">Range</th>
+<th align="center">RoF</th>
+<th align="center">Shots</th>
+<th align="center">Bulk</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Pistol Crossbow</td>
+<td align="center"><span x-data="success(12)"></span></td>
+<td align="center"><span x-data="damage({dice: 1, adds: 1})"></span> imp</td>
+<td align="center">1</td>
+<td align="center">216 / 288</td>
+<td align="center">1</td>
+<td align="center">1(4)</td>
+<td align="center">-4</td>
+</tr>
+</tbody></table>
+</section>
+<section>
+<h2 id="equipment">Equipment</h2>
+<ul>
+<li>Hip Quiver<ul>
+<li>Crossbow Bolt; Qty:20</li>
+</ul>
+</li>
+<li>Light Whip</li>
+<li>Pistol Crossbow</li>
+<li>Small Backpack<ul>
+<li>Personal Basics</li>
+<li>Wineskin</li>
+</ul>
+</li>
+</ul>
+</section>
+</main><footer x-data="toaster" x-bind="toasts" class="toast"><template x-for="(toast, index) in queue"><div x-bind="toast"></div></template></footer></body></html>

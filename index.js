@@ -51,7 +51,9 @@ document.addEventListener("alpine:init", () => {
           newToast["@click"] = function () {
             this.queue.splice(this.queue.indexOf(newToast), 1);
           };
+
           this.queue.push(newToast);
+          setTimeout(() => this.queue.shift(), detail.duration ?? 4000);
         },
       },
     },
@@ -114,7 +116,7 @@ document.addEventListener("alpine:init", () => {
       },
     })
   );
-  Alpine.data("damage", ({ dice, adds }) => ({
+  Alpine.data("damage", ({ dice, adds = 0, min = 0 }) => ({
     dice,
     adds,
     init() {
@@ -129,6 +131,7 @@ document.addEventListener("alpine:init", () => {
         for (let i = 0; i < dice; i++) {
           roll += Math.floor(Math.random() * 6) + 1;
         }
+        roll = Math.max(roll, min);
         this.$dispatch("toast", {
           "x-text": `You rolled ${dice}d${
             adds >= 0 ? "+" + adds : adds
@@ -147,10 +150,10 @@ document.addEventListener("alpine:init", () => {
     },
     button: {
       ["@click"]() {
-        const roll = gurpsRoll(this.level);
+        const { result, degree } = gurpsRoll(this.level);
         this.$dispatch("toast", {
-          "x-text": `Your effective level is ${this.level}. You rolled ${roll.result}, a ${roll.degree}`,
-          ":class": roll.degree.includes("failure") ? "failure" : "success",
+          "x-text": `Your effective level is ${this.level}. You rolled ${result}, a ${degree}`,
+          ":class": degree.includes("failure") ? "failure" : "success",
         });
       },
       ["x-text"]() {
