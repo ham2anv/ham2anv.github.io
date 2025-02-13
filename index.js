@@ -53,7 +53,7 @@ document.addEventListener("alpine:init", () => {
           };
 
           this.queue.push(newToast);
-          setTimeout(() => this.queue.shift(), detail.duration ?? 4000);
+          // setTimeout(() => this.queue.shift(), detail.duration ?? 4000);
         },
       },
     },
