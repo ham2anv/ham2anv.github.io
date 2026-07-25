@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoni</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Antoni</h1>
+        <p>he/him</p>
+        <p><strong>Total</strong>: 150 points</p>
+    </header>
+
+    <main>
+
+        <section id="background">
+            <details>
+                <summary>Background</summary>
+                <p>Antoni is the son of a wealthy merchant. Attractive, rich, and well liked, but only mildly talented
+                    and a poor student, he excels more in business affairs than magic. His confident demeanor masks a
+                    deep fear of inadequacy. With his training now complete, he wants to start his life without relying
+                    on his family’s wealth or connections, to prove that he can make it on his own.</p>
+                <p>Antoni and Caleb plan to open a shop together. Caleb will enchant inexpensive magic items, and Antoni
+                    will manage sales and finances. Before they can begin, Antoni must get Caleb to sign a contract
+                    formalizing the partnership, so he can secure a storefront from the Merchants Guild.</p>
+                <p>Miranda and Antoni have been on-again-off-again lovers for two years. While they are currently
+                    on-again, Antoni has recently been dwelling on his attraction to Jensen, which he believes is
+                    mutual.</p>
+                <p>Gillaine accuses Antoni of stealing her idea for a final project. The two have been rivals for some
+                    time, and the halfling believes that the similarities in their work go beyond coincidence. Antoni
+                    doesn’t know where she got this idea and has publicly denied any wrongdoing.</p>
+                <p>Antoni secretly despises Kenlee, but says nothing because of her status. For her part, Kenlee has
+                    never taken the hint and thinks she and Antoni are great friends.</p>
+
+            </details>
+        </section>
+
+        <section id="attributes">
+            <details open>
+                <summary>Attributes</summary>
+                <div class="attributes">
+                    <div>ST 10 <button popovertarget="st">🛈</button>
+                        <div id="st" popover>
+                            <hgroup>
+                                <div><strong>Strength</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                            <p>Basic Lift 20 lbs.; Damage 1d-2 thrust, 1d swing</p>
+                        </div>
+                    </div>
+                    <div>DX 10 <button popovertarget="dx">🛈</button>
+                        <div id="dx" popover>
+                            <hgroup>
+                                <div><strong>Dexterity</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                            <p>Basic Speed 5.25; Basic Move 5</p>
+                            <p>Dodge 8</p>
+                        </div>
+                    </div>
+                    <div>IQ 12 <button popovertarget="iq">🛈</button></span>
+                        <div id="iq" popover>
+                            <hgroup>
+                                <div><strong>Intelligence</strong></div>
+                                <div>40 points</div>
+                            </hgroup>
+                        </div>
+                        <p></p>
+                    </div>
+                    <div>HT 11 <button popovertarget="ht">🛈</button>
+                        <div id="ht" popover>
+                            <hgroup>
+                                <div><strong>Health</strong></div>
+                                <div>10 points</div>
+                            </hgroup>
+                        </div>
+                    </div>
+                    <div>HP 10 <button popovertarget="hp">🛈</button>
+                        <div id="hp" popover>
+                            <hgroup>
+                                <div><strong>Hit Points</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                            <p>Reeling at <strong>3 HP</strong> or less (half Move and Dodge)</p>
+                        </div>
+                    </div>
+                    <div>Will 12 <button popovertarget="will">🛈</button>
+                        <div id="will" popover>
+                            <hgroup>
+                                <div><strong>Will</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                        </div>
+                    </div>
+                    <div>Per 13 <button popovertarget="per">🛈</button>
+                        <div id="per" popover>
+                            <hgroup>
+                                <div><strong>Perception</strong></div>
+                                <div>5 points</div>
+                            </hgroup>
+                        </div>
+                    </div>
+                    <div>FP 14 <button popovertarget="fp">🛈</button>
+                        <div id="fp" popover>
+                            <hgroup>
+                                <div><strong>Fatigue Points</strong></div>
+                                <div>9 points</div>
+                            </hgroup>
+                            <p>Very tired at <strong>4 FP</strong> or less (half Move, Dodge, and ST)</p>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <section id="advantages">
+            <details open>
+                <summary>Languages</summary>
+                <ul>
+                    <li>Anglish (Native) <button popovertarget="anglish">🛈</button>
+                        <div id="anglish" popover>
+                            <hgroup>
+                                <div><strong>Anglish (Native)</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                            <p>You speak Anglish fluently, as it is the common tongue of your home nation, Megalos.</p>
+                        </div>
+                    </li>
+                    <li>Dwarvish (Accented) <button popovertarget="dwarvish">🛈</button>
+                        <div id="dwarvish" popover>
+                            <hgroup>
+                                <div><strong>Dwarvish (Accented)</strong></div>
+                                <div>4 points</div>
+                            </hgroup>
+                            <p>Through dealings with the many dwarven merchants in Arvey, you speak and read Dwarvish
+                                quite well.
+                            </p>
+                        </div>
+                    </li>
+                    <li>Elvish (Broken spoken) <button popovertarget="elvish">🛈</button>
+                        <div id="elvish" popover>
+                            <hgroup>
+                                <div><strong>Elvish (Broken spoken)</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>You speak a little Elvish, enough to hold a halting conversation. You cannot
+                                read Elvish at all.</p>
+                        </div>
+                    </li>
+                    <li>Latin (Broken) <button popovertarget="latin">🛈</button>
+                        <div id="latin" popover>
+                            <hgroup>
+                                <div><strong>Latin (Broken)</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <p>You speak and read enough Latin to survive your education.</p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+            <details open>
+                <summary>Advantages</summary>
+                <ul>
+                    <li>
+                        <div>Appearance (Attractive)</span> <button popovertarget="appearance"">🛈</button></div>
+                        <div class=" info" id="appearance" popover>
+                                <hgroup>
+                                    <div><strong>Appearance (Attractive)</strong></div>
+                                    <div>4 points</div>
+                                </hgroup>
+                                <p>
+                                    You are generally good looking, giving a +1 reaction bonus from everyone. This also
+                                    gives a +1 bonus included in your Sex Appeal skill.
+                                </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Business Acumen 1 <button popovertarget="business">🛈</button>
+                        </div>
+                        <div id="business" popover>
+                            <hgroup>
+                                <div><strong>Business Acumen 1</strong></div>
+                                <div>10 points</div>
+                            </hgroup>
+                            <p>
+                                A talent included in your Accounting, Administration, Finance, Gambling, Market
+                                Analysis, and Merchant skills. Also gives a reaction bonus from anyone you do business
+                                with.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Charisma 1 <button popovertarget="charisma">🛈</button>
+                        </div>
+                        <div id="charisma" popover>
+                            <hgroup>
+                                <div><strong>Charisma 1</strong></div>
+                                <div>5 points</div>
+                            </hgroup>
+                            <p>You are naturally impressive, giving a reaction bonus from anyone you interact with.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Heir (Wealthy) <button popovertarget="heir">🛈</button>
+                        </div>
+                        <div id="heir" popover>
+                            <hgroup>
+                                <div><strong>Heir (Wealthy)</strong></div>
+                                <div>10 points</div>
+                            </hgroup>
+                            <p>
+                                You are set to inherit a modest fortune. Until then, you have half the benefits of your
+                                future wealth (included in your starting gear).
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Honest Face <button popovertarget="honest">🛈</button>
+                        </div>
+                        <div id="honest" popover>
+                            <hgroup>
+                                <div><strong>Honest Face</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>People tend to trust and think well of you unless you give them a reason to do otherwise.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Magery 1 <button popovertarget="magery">🛈</button></div>
+                        <div id="magery" popover>
+                            <hgroup>
+                                <div><strong>Magery 1</strong></div>
+                                <div>15 points</div>
+                            </hgroup>
+                            <p>You are a mage. This gives a bonus included in your Thaumatology skill and all spells.
+                                You may sense magic items whenever you first see them or touch them.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>Staff Bond <button popovertarget="staffbond">🛈</button>
+                        </div>
+                        <div id="staffbond" popover>
+                            <hgroup>
+                                <div><strong>Staff Bond</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>You have a magic bond with a staff (your wand listed in gear) that aids in concentration.
+                                You ignore -1 point of penalties for spells currently "on."</p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+
+        </section>
+
+        <section id="disadvantages">
+            <details open>
+                <summary>Disadvantages</summary>
+                <ul>
+                    <li>
+                        Bad Sight (Nearsighted; Wears glasses) <button popovertarget="badsight">🛈</button>
+                        <div id="badsight" popover>
+                            <hgroup>
+                                <div><strong>Bad Sight (Nearsighted; Mitigator, Glasses, -60%)</strong></div>
+                                <div>-10 points</div>
+                            </hgroup>
+                            <p>Without your glasses, <strong>-6</strong> to spot things more than a yard away.</p>
+                        </div>
+                    </li>
+                    <li>
+                        Chummy <button popovertarget="chummy">🛈</button>
+                        <div id="chummy" popover>
+                            <hgroup>
+                                <div><strong>Chummy</strong></div>
+                                <div>-5 points</div>
+                            </hgroup>
+                            <p>You react to others positively most of the time. When alone, you are unhappy and
+                                distracted.</p>
+                        </div>
+                    </li>
+                    <li>Quirks
+                        <ul>
+                            <li>Portrays confidence to mask insecurity</li>
+                            <li>Wants to get by on his own merits, not relying on his family</li>
+                            <li>Alcohol Intolerance</li>
+                            <li>Responsive</li>
+                            <li>Distractible</li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="skills">
+            <details open>
+                <summary>Skills</summary>
+                <ul>
+                    <li>Accounting 11 <button popovertarget="accounting">🛈</button>
+                        <div id="accounting" popover>
+                            <hgroup>
+                                <div><strong>Accounting</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>Includes +1 from Business Acumen.</p>
+                        </div>
+                    </li>
+                    <li>Administration 12 <button popovertarget="administration">🛈</button>
+                        <div id="administration" popover>
+                            <hgroup>
+                                <div><strong>Administration</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>Includes +1 from Business Acumen.</p>
+                        </div>
+                    </li>
+                    <li>Carousing 11 <button popovertarget="carousing">🛈</button>
+                        <div id="carousing" popover>
+                            <hgroup>
+                                <div><strong>Carousing</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>Diplomacy 11 <button popovertarget="diplomacy">🛈</button>
+                        <div id="diplomacy" popover>
+                            <hgroup>
+                                <div><strong>Diplomacy</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>Fast-Talk 12 <button popovertarget="fasttalk">🛈</button>
+                        <div id="fasttalk" popover>
+                            <hgroup>
+                                <div><strong>Fast-Talk</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>Finance 11 <button popovertarget="finance">🛈</button>
+                        <div id="finance" popover>
+                            <hgroup>
+                                <div><strong>Finance</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>Includes +1 from Business Acumen.</p>
+                        </div>
+                    </li>
+                    <li>Gambling 12 <button popovertarget="gambling">🛈</button>
+                        <div id="gambling" popover>
+                            <hgroup>
+                                <div><strong>Gambling</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>Includes +1 from Business Acumen.</p>
+                        </div>
+                    </li>
+                    <li>Market Analysis 11 <button popovertarget="market">🛈</button>
+                        <div id="market" popover>
+                            <hgroup>
+                                <div><strong>Market Analysis</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>Includes +1 from Business Acumen.</p>
+                        </div>
+                    </li>
+                    <li>Merchant 12 <button popovertarget="merchant">🛈</button>
+                        <div id="merchant" popover>
+                            <hgroup>
+                                <div><strong>Merchant</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>Includes +1 from Business Acumen.</p>
+                        </div>
+                    </li>
+                    <li>Research 11 <button popovertarget="research">🛈</button>
+                        <div id="research" popover>
+                            <hgroup>
+                                <div><strong>Research</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>Sex Appeal 11 <button popovertarget="sexappeal">🛈</button>
+                        <div id="sexappeal" popover>
+                            <hgroup>
+                                <div><strong>Sex Appeal</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <p>Includes +1 from Appearance.</p>
+                        </div>
+                    </li>
+                    <li>Shortsword 11 <button popovertarget="shortsword">🛈</button>
+                        <div id="shortsword" popover>
+                            <hgroup>
+                                <div><strong>Shortsword</strong></div>
+                                <div>4 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>Thaumatology 12 <button popovertarget="thaumatology">🛈</button>
+                        <div id="thaumatology" popover>
+                            <hgroup>
+                                <div><strong>Thaumatology</strong></div>
+                                <div>4 points</div>
+                            </hgroup>
+                            <p>Includes +1 from Magery.</p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="spells">
+            <details open>
+                <summary>Spells</summary>
+
+                <ul>
+                    <li>Clean 12 <button popovertarget="clean">🛈</button>
+                        <div id="clean" popover>
+                            <hgroup>
+                                <div><strong>Clean</strong></div>
+                                <div>Area</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Permanent</div>
+                                <div><strong>Base cost</strong>: 2</div>
+                            </hgroup>
+                            <p>Cleans the subject area or being.</p>
+                        </div>
+                    </li>
+                    <li>Continual Light 11 <button popovertarget="continuallight">🛈</button>
+                        <div id="continuallight" popover>
+                            <hgroup>
+                                <div><strong>Continual Light</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 2d days</div>
+                                <div><strong>Cost</strong>: see below</div>
+                            </hgroup>
+                            <p>Make an object glow with white light.</p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Brightness</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Candle</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Torch</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Daylight</td>
+                                        <td>6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li>Find Weakness 12 <button popovertarget="findweakness">🛈</button>
+                        <div id="findweakness" popover>
+                            <hgroup>
+                                <div><strong>Find Weakness</strong></div>
+                                <div>Information</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Time to cast</strong>: 2 sec.</div>
+                                <div><strong>Duration</strong>: Instant</div>
+                                <div><strong>Cost</strong>: 1*</div>
+                            </hgroup>
+                            <p>* Cost is 1/yard for a large object. Double cost if subject is alive.</p>
+                            <p>Sense the weakest part of the subject.</p>
+                        </div>
+                    </li>
+                    <li>Hide Emotion 13 <button popovertarget="hideemotion">🛈</button>
+                        <div id="hideemotion" popover>
+                            <hgroup>
+                                <div><strong>Hide Emotion</strong></div>
+                                <div>Regular</div>
+                                <div>4 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 hour</div>
+                                <div><strong>Cost</strong>: 2 to cast, 2 to maintain</div>
+                            </hgroup>
+                            <p>Gives its subject the outward appearance of deep calm. Resists emotion readings.</p>
+                        </div>
+                    </li>
+                    <li>Ignite Fire 12 <button popovertarget="ignitefire">🛈</button>
+                        <div id="ignitefire" popover>
+                            <hgroup>
+                                <div><strong>Ignite Fire</strong></div>
+                                <div>Regular</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 sec.</div>
+                                <div><strong>Cost</strong>: see below</div>
+                            </hgroup>
+                            <p>Produces a single spot of heat, and is
+                                used to set fire to a <em>readily</em> flammable
+                                object. </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Heat</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Match</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Torch</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Blowtorch</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Magnesium</td>
+                                        <td>4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </li>
+                    <li>Light 11 <button popovertarget="light">🛈</button>
+                        <div id="light" popover>
+                            <hgroup>
+                                <div><strong>Light</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 min.</div>
+                                <div><strong>Cost</strong>: 1 to cast, 1 to maintain</div>
+                            </hgroup>
+                            <p>Produces a small light like a candleflame.</p>
+                        </div>
+                    </li>
+                    <li>Magelock 12 <button popovertarget="magelock">🛈</button>
+                        <div id="magelock" popover>
+                            <hgroup>
+                                <div><strong>Magelock</strong></div>
+                                <div>Regular</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 6 hours</div>
+                                <div><strong>Time to cast</strong>: 4 seconds</div>
+                                <div><strong>Cost</strong>: 3 to cast, 2 to maintain</div>
+                            </hgroup>
+                            <p>Locks a door magically. Resists Lockmaster spell.</p>
+                        </div>
+                    </li>
+                    <li>Measurement 11 <button popovertarget="measurement">🛈</button>
+                        <div id="measurement" popover>
+                            <hgroup>
+                                <div><strong>Measurement</strong></div>
+                                <div>Area; Information</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Base cost</strong>: 1</div>
+                            </hgroup>
+                            <p>Tells the caster any one of
+                                the following things about
+                                the subject: (a) its weight;
+                                (b) its measurements in all
+                                dimensions; (c) its area;
+                                (d) its volume.</p>
+                        </div>
+                    </li>
+                    <li>Persuasion 12 <button popovertarget="persuasion">🛈</button>
+                        <div id="persuasion" popover>
+                            <hgroup>
+                                <div><strong>Persuation</strong></div>
+                                <div>Regular; Resisted by Will</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 min.</div>
+                                <div><strong>Cost</strong>: Twice bonus, same to maintain</div>
+                            </hgroup>
+                            <p>Used when a reaction roll is
+                                required, this spell makes the subject more likely to react favorably (giving a Reaction
+                                Roll bonus of up to +5).</p>
+                        </div>
+                    </li>
+                    <li>Purify Air 12 <button popovertarget="purifyair">🛈</button>
+                        <div id="purifyair" popover>
+                            <hgroup>
+                                <div><strong>Purify Air</strong></div>
+                                <div>Area</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Instant; purification is permanent</div>
+                                <div><strong>Base cost</strong>: 1; cannot be maintained</div>
+                            </hgroup>
+                            <p>Removes all impurities from the
+                                air in its area of effect. </p>
+                        </div>
+                    </li>
+                    <li>Purify Water 12 <button popovertarget="purifywater">🛈</button>
+                        <div id="purifywater" popover>
+                            <hgroup>
+                                <div><strong>Purify Water</strong></div>
+                                <div>Special</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Water remains pure unless recontaminated</div>
+                                <div><strong>Time to cast</strong>: 5&ndash;10 sec./gallon</div>
+                                <div><strong>Cost</strong>: 1/gallon</div>
+                            </hgroup>
+                            <p>Remove all impurities from water
+                                by pouring it through any hoop or ring
+                                into a
+                                container.</p>
+                        </div>
+                    </li>
+                    <li>Seek Earth 12 <button popovertarget="seekearth">🛈</button>
+                        <div id="seekearth" popover>
+                            <hgroup>
+                                <div><strong>Seek Earth</strong></div>
+                                <div>Information</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Time to cast</strong>: 10 sec.</div>
+                                <div><strong>Cost</strong>: 3</div>
+                            </hgroup>
+                            <p>Tells the caster the direction and approximate distance
+                                of the nearest significant
+                                amount of any one type of
+                                earth, metal, or stone. </p>
+                        </div>
+                    </li>
+                    <li>Seek Water 11 <button popovertarget="seekwater">🛈</button>
+                        <div id="seekwater" popover>
+                            <hgroup>
+                                <div><strong>Seek Water</strong></div>
+                                <div>Information</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Cost</strong>: 2</div>
+                            </hgroup>
+                            <p>Determines the direction, distance,
+                                and general nature of the nearest
+                                significant source of
+                                water. </p>
+                        </div>
+                    </li>
+                    <li>Sense Danger 11 <button popovertarget="sensedanger">🛈</button>
+                        <div id="sensedanger" popover>
+                            <hgroup>
+                                <div><strong>Sense Danger</strong></div>
+                                <div>Information</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Instant</div>
+                                <div><strong>Cost</strong>: 3</div>
+                            </hgroup>
+                            <p>Tells the caster if any immediate
+                                danger is nearby.</p>
+                        </div>
+                    </li>
+                    <li>Sense Emotion 12 <button popovertarget="senseemotion">🛈</button>
+                        <div id="senseemotion" popover>
+                            <hgroup>
+                                <div><strong>Sense Emotion</strong></div>
+                                <div>Regular</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Cost</strong>: 2</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>Sense Foes 11 <button popovertarget="sensefoes">🛈</button>
+                        <div id="sensefoes" popover>
+                            <hgroup>
+                                <div><strong>Sense Foes</strong></div>
+                                <div>Information; Area</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Base cost</strong>: 1 (minimum 2)</div>
+                            </hgroup>
+                            <p>Tells the caster if the subject has
+                                hostile intent, and what the degree of
+                                hostility is. Can be cast on one person
+                                or a whole area.</p>
+                        </div>
+                    </li>
+                    <li>Watchdog 12 <button popovertarget="watchdog">🛈</button>
+                        <div id="watchdog" popover>
+                            <hgroup>
+                                <div><strong>Watchdog</strong></div>
+                                <div>Area</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 10 hours</div>
+                                <div><strong>Time to cast</strong>: 10 sec.</div>
+                                <div><strong>Base cost</strong>: 1 to cast, 1 to maintain</div>
+                            </hgroup>
+                            <p>When cast around an area, this
+                                spell warns the caster of anyone or
+                                anything crossing with hostile intent.</p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="gear">
+            <details open>
+                <summary>Gear</summary>
+                <ul>
+                    <li>Wand (baton enchanted with Staff) set with a 3-point Powerstone</li>
+                </ul>
+            </details>
+        </section>
+    </main>
+</body>
+
+</html>

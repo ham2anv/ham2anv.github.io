@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jensen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Jensen</h1>
+        <p>he/him</p>
+        <p><strong>Total:</strong> 150 points</p>
+    </header>
+    <main>
+        <section id="background">
+            <details>
+                <summary>Background</summary>
+                <p>To the professors at the Academy, Jensen was a bright, if unambitious, pupil. That’s because his true
+                    talent lies in an area the Academy doesn’t cover much: Mind Control spells. These he has studied
+                    extensively on his own, sometimes at the cost of his other subjects.</p>
+                <p>In his personal life, Jensen is the consummate schemer. He uses his natural looks and unnatural charm
+                    to manipulate others and get what he wants. He pushes others and uses their discomfort to make
+                    himself look better.</p>
+                <p>Jensen sees Antoni as a mark and leverages the other man’s (obvious to Jensen) attraction. He hopes
+                    to insert himself into Antoni’s business to siphon away his family’s money.</p>
+                <p>Miranda and Jensen are rivals for Antoni’s affections. Neither has told him that they slept together
+                    during one of the couple’s break-ups.</p>
+                <p>Jensen finds Caleb unnerving but can’t put his finger on why. He is equally curious about and
+                    repelled by the man.</p>
+                <p>He is friendly and generous toward Gillaine, plying her with drink to get her to divulge gossip about
+                    everyone else. He gave Caleb notes on Gillaine’s project, knowing he would pass them on to Antoni.
+                </p>
+                <p>Jensen has definitely slept with Kenlee. Surprisingly, he caught legitimate feelings for her, and he
+                    doesn’t know what to do with them. He knows she has feelings for Antoni, and that makes him treat
+                    the other man even worse.</p>
+
+            </details>
+        </section>
+
+        <section id="attributes">
+            <details open>
+                <summary>Attributes</summary>
+                <div class="attributes">
+                    <div>ST 11 <button popovertarget="st">🛈</button>
+                        <div id="st" popover>
+                            <hgroup>
+                                <div><strong>Strength</strong></div>
+                                <div>10 points</div>
+                            </hgroup>
+                            <p>Basic Lift 24 lbs.; Damage 1d-1 thrust, 1d+1 swing</p>
+                        </div>
+                    </div>
+                    <div>DX 11 <button popovertarget="dx">🛈</button>
+                        <div id="dx" popover>
+                            <hgroup>
+                                <div><strong>Dexterity</strong></div>
+                                <div>20 points</div>
+                            </hgroup>
+                            <p>Basic Speed 5.50; Basic Move 5</p>
+                            <p>Dodge 8</p>
+                        </div>
+                    </div>
+                    <div>IQ 12 <button popovertarget="iq">🛈</button></span>
+                        <div id="iq" popover>
+                            <hgroup>
+                                <div><strong>Intelligence</strong></div>
+                                <div>40 points</div>
+                            </hgroup>
+                        </div>
+                        <p></p>
+                    </div>
+                    <div>HT 11 <button popovertarget="ht">🛈</button>
+                        <div id="ht" popover>
+                            <hgroup>
+                                <div><strong>Health</strong></div>
+                                <div>10 points</div>
+                            </hgroup>
+                        </div>
+                    </div>
+                    <div>HP 11 <button popovertarget="hp">🛈</button>
+                        <div id="hp" popover>
+                            <hgroup>
+                                <div><strong>Hit Points</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                            <p>Reeling at <strong>3 HP</strong> or less (half Move and Dodge)</p>
+                        </div>
+                    </div>
+                    <div>Will 12 <button popovertarget="will">🛈</button>
+                        <div id="will" popover>
+                            <hgroup>
+                                <div><strong>Will</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                        </div>
+                    </div>
+                    <div>Per 12 <button popovertarget="per">🛈</button>
+                        <div id="per" popover>
+                            <hgroup>
+                                <div><strong>Perception</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                        </div>
+                    </div>
+                    <div>FP 13 <button popovertarget="fp">🛈</button>
+                        <div id="fp" popover>
+                            <hgroup>
+                                <div><strong>Fatigue Points</strong></div>
+                                <div>6 points</div>
+                            </hgroup>
+                            <p>Very tired at <strong>4 FP</strong> or less (half Move, Dodge, and ST)</p>
+                        </div>
+                    </div>
+                </div>
+            </details>
+        </section>
+
+        <section id="advantages">
+            <details open>
+                <summary>Languages</summary>
+                <ul>
+                    <li>Anglish (Native) <button popovertarget="anglish">🛈</button>
+                        <div id="anglish" popover>
+                            <hgroup>
+                                <div><strong>Anglish (Native)</strong></div>
+                                <div>0 points</div>
+                            </hgroup>
+                            <p>You speak Anglish fluently, as it is the common tongue of your home nation, Megalos.</p>
+                        </div>
+                    </li>
+                    <li>
+                        Dwarvish (Accented spoken, Broken written) <button popovertarget="dwarvish">🛈</button>
+                        <div id="dwarvish" popover>
+                            <hgroup>
+                                <div><strong>Dwarvish (spoken Accented, written Broken)</strong></div>
+                                <div>3 points</div>
+                            </hgroup>
+                            <p>You can read a bit of Dwarvish, and you can speak it even better.</p>
+                        </div>
+                    </li>
+                    <li>Latin (Broken) <button popovertarget="latin">🛈</button>
+                        <div id="latin" popover>
+                            <hgroup>
+                                <div><strong>Latin (Broken)</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <p>You speak and read enough Latin to survive your education.</p>
+                        </div>
+                    </li>
+                </ul>
+
+            </details>
+            <details open>
+                <summary>Advantages</summary>
+                <ul>
+                    <li>Appearance (Attractive) <button popovertarget="appearance">🛈</button>
+                        <div id="appearance" popover>
+                            <hgroup>
+                                <div><strong>Appearance (Attractive)</strong></div>
+                                <div>4 points</div>
+                            </hgroup>
+                            <p>
+                                You are generally good looking, giving a +1 reaction bonus from everyone. This also
+                                gives a +1 bonus included in your Sex Appeal skill.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Magery 1 <button popovertarget="magery1">🛈</button>
+                        <div id="magery1" popover>
+                            <hgroup>
+                                <div><strong>Magery 1</strong></div>
+                                <div>15 points</div>
+                            </hgroup>
+                            <p>You are a mage. This gives a bonus included in your Thaumatology skill and all spells.
+                                You may sense magic items whenever you first see them or touch them.</p>
+                        </div>
+                    </li>
+                    <li>
+                        Mind Control Magery 2 <button popovertarget="magery2">🛈</button>
+                        <div id="magery2" popover>
+                            <hgroup>
+                                <div><strong>Magery 2 (One-College, Mind Control, -40%)</strong></div>
+                                <div>12 points</div>
+                            </hgroup>
+                            <p>
+                                You have even greater aptitude with Mind Control magic. This gives a bonus included in
+                                all of your spells of that college.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="disadvantages">
+            <details open>
+                <summary>Disadvantages</summary>
+                <ul>
+                    <li>Bully <button popovertarget="bully">🛈</button>
+                        <div id="bully" popover>
+                            <hgroup>
+                                <div><strong>Bully</strong></div>
+                                <div>self-control 15</div>
+                                <div>-5 points</div>
+                            </hgroup>
+                            <p>
+                                You like to push people around whenever you can get away with it.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Lecherousness <button popovertarget="lecherousness">🛈</button>
+                        <div id="lecherousness" popover>
+                            <hgroup>
+                                <div><strong>Lecherousness</strong></div>
+                                <div>self-control 15</div>
+                                <div>-7 points</div>
+                            </hgroup>
+                            <p>
+                                You have an unusually strong desire for "romance."
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Overconfidence <button popovertarget="overconfidence">🛈</button>
+                        <div id="overconfidence" popover>
+                            <hgroup>
+                                <div><strong>Overconfidence</strong></div>
+                                <div>self-control 12</div>
+                                <div>-5 points</div>
+                            </hgroup>
+                            <p>
+                                You believe that you are far more powerful, intelligent, or competent than you really
+                                are.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Selfish <button popovertarget="selfish">🛈</button>
+                        <div id="selfish" popover>
+                            <hgroup>
+                                <div><strong>Selfish</strong></div>
+                                <div>self-control 12</div>
+                                <div>-5 points</div>
+                            </hgroup>
+                            <p>
+                                You are self-important and status-conscious, and spend much of your time striving for
+                                social dominance.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Quirks
+                        <ul>
+                            <li>Covers for his own feelings with a nasty wit</li>
+                            <li>“Just one more drink, what’ll it hurt?”</li>
+                            <li>Stirs up shit at the worst times</li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="skills">
+            <details open>
+                <summary>Skills</summary>
+                <ul>
+                    <li>
+                        Acting 12 <button popovertarget="acting">🛈</button>
+                        <div id="acting" popover>
+                            <hgroup>
+                                <div><strong>Acting</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Area Knowledge (Arvey) 12 <button popovertarget="area">🛈</button>
+                        <div id="area" popover>
+                            <hgroup>
+                                <div><strong>Area Knowledge (Arvey)</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Brawling 11 <button popovertarget="brawling">🛈</button>
+                        <div id="brawling" popover>
+                            <hgroup>
+                                <div><strong>Brawling</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Carousing 12 <button popovertarget="carousing">🛈</button>
+                        <div id="carousing" popover>
+                            <hgroup>
+                                <div><strong>Carousing</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Detect Lies 12 <button popovertarget="detectlies">🛈</button>
+                        <div id="detectlies" popover>
+                            <hgroup>
+                                <div><strong>Detect Lies</strong></div>
+                                <div>4 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Fast-Talk 12 <button popovertarget="fasttalk">🛈</button>
+                        <div id="fasttalk" popover>
+                            <hgroup>
+                                <div><strong>Fast-Talk</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Gambling 12 <button popovertarget="gambling">🛈</button>
+                        <div id="gambling" popover>
+                            <hgroup>
+                                <div><strong>Gambling</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Observation 12 <button popovertarget="observation">🛈</button>
+                        <div id="observation" popover>
+                            <hgroup>
+                                <div><strong>Observation</strong></div>
+                                <div>2 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Research 11 <button popovertarget="research">🛈</button>
+                        <div id="research" popover>
+                            <hgroup>
+                                <div><strong>Research</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Sex Appeal 12 <button popovertarget="sexappeal">🛈</button>
+                        <div id="sexappeal" popover>
+                            <hgroup>
+                                <div><strong>Sex Appeal</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>
+                                Includes +1 from Appearance.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        Stealth 12 <button popovertarget="stealth">🛈</button>
+                        <div id="stealth" popover>
+                            <hgroup>
+                                <div><strong>Stealth</strong></div>
+                                <div>4 points</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Streetwise 11 <button popovertarget="streetwise">🛈</button>
+                        <div id="streetwise" popover>
+                            <hgroup>
+                                <div><strong>Streetwise</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                        </div>
+                    </li>
+                    <li>
+                        Thaumatology 11 <button popovertarget="thaumatology">🛈</button>
+                        <div id="thaumatology" popover>
+                            <hgroup>
+                                <div><strong>Thaumatology</strong></div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <p>
+                                Includes +1 from Magery.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="spells">
+            <details open>
+                <summary>Spells</summary>
+                <ul>
+                    <li>Apportation 10 <button popovertarget="apportation">🛈</button>
+                        <div id="apportation" popover>
+                            <hgroup>
+                                <div><strong>Apportation</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 min.</div>
+                                <div><strong>Cost</strong>: see below</div>
+                            </hgroup>
+                            <p>Move physical objects without touching them. </p>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Weight</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>less than 1 lb.</td>
+                                        <td>1</td>
+                                    </tr>
+                                    <tr>
+                                        <td>up to 10 lbs.</td>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <td>up to 50 lbs.</td>
+                                        <td>3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>up to 200 lbs.</td>
+                                        <td>5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>every additional 100 lbs.</td>
+                                        <td>+4</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                Resisted by Will.
+                            </p>
+                        </div>
+                    </li>
+                    <li>Clumsiness 10 <button popovertarget="clumsiness">🛈</button>
+                        <div id="clumsiness" popover>
+                            <hgroup>
+                                <div><strong>Clumsiness</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 min.</div>
+                                <div><strong>Cost</strong>: 1&ndash;5, half to maintain</div>
+                            </hgroup>
+                            <p>
+                                The subject suffers -1 to his DX and DX-based skills for every point of energy put into
+                                the spell.
+                            </p>
+                            <p>Resisted by HT.</p>
+                        </div>
+                    </li>
+                    <li>Command 12 <button popovertarget="command">🛈</button>
+                        <div id="command" popover>
+                            <hgroup>
+                                <div><strong>Command</strong></div>
+                                <div>Blocking</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Cost</strong>: 2</div>
+                            </hgroup>
+                            <p>
+                                Give a subject one immediate command – a word and a gesture, or at most
+                                two words.
+                            </p>
+                            <p>Resisted by Will.</p>
+                            <p>Includes +2 from Mind Control Magery.</p>
+                        </div>
+                    </li>
+                    <li>Foolishness 12 <button popovertarget="foolishness">🛈</button>
+                        <div id="foolishness" popover>
+                            <hgroup>
+                                <div><strong>Foolishness</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 min.</div>
+                                <div><strong>Cost</strong>: 1&ndash;5; half to maintain</div>
+                            </hgroup>
+                            <p>
+                                The subject suffers -1 to his IQ and
+                                IQ-based skills (including spells) for
+                                every point of energy put into the
+                                spell.
+                            </p>
+                            <p>Resisted by Will.</p>
+                            <p>Includes +2 from Mind Control Magery.</p>
+                        </div>
+                    </li>
+                    <li>Forgetfulness 12 <button popovertarget="forgetfulness">🛈</button>
+                        <div id="forgetfulness" popover>
+                            <hgroup>
+                                <div><strong>Forgetfulness</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 hour</div>
+                                <div><strong>Cost</strong>: 3 to cast, 3 to maintain</div>
+                            </hgroup>
+                            <p>
+                                Causes the subject to forget one
+                                fact, skill, or spell temporarily.
+                            </p>
+                            <p>Resisted by Will or skill.</p>
+                            <p>Includes +2 from Mind Control Magery.</p>
+                        </div>
+                    </li>
+                    <li>Hide Emotion 11 <button popovertarget="hideemotion">🛈</button>
+                        <div id="hideemotion" popover>
+                            <hgroup>
+                                <div><strong>Hide Emotion</strong></div>
+                                <div>Regular</div>
+                                <div>2 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 hour</div>
+                                <div><strong>Cost</strong>: 2 to cast, 2 to maintain</div>
+                            </hgroup>
+                            <p>
+                                This spell gives its subject the outward appearance of deep calm.
+                            </p>
+                            <p>Resists emotion readings.</p>
+                        </div>
+                    </li>
+                    <li>Itch 10 <button popovertarget="itch">🛈</button>
+                        <div id="itch" popover>
+                            <hgroup>
+                                <div><strong>Itch</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Until subject takes a turn to scratch</div>
+                                <div><strong>Cost</strong>: 2</div>
+                            </hgroup>
+                            <p>
+                                Causes the subject to itch fiercely
+                                in a spot of the caster’s choice.
+                            </p>
+                            <p>Resisted by HT.</p>
+                        </div>
+                    </li>
+                    <li>Lend Energy 10 <button popovertarget="lendenergy">🛈</button>
+                        <div id="lendenergy" popover>
+                            <hgroup>
+                                <div><strong>Lend Energy</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Cost</strong>: any, which goes to subject</div>
+                            </hgroup>
+                            <p>
+                                Restores the subject’s lost Fatigue
+                                Points, at an energy cost to the caster.
+                            </p>
+                        </div>
+                    </li>
+                    <li>Lockmaster 10 <button popovertarget="lockmaster">🛈</button>
+                        <div id="lockmaster" popover>
+                            <hgroup>
+                                <div><strong>Lockmaster</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Lock stays open until closed</div>
+                                <div><strong>Cost</strong>: 3</div>
+                            </hgroup>
+                            <p>
+                                Opens locks magically.
+                            </p>
+                            <p>
+                                Resisted by Magelock.
+                            </p>
+                        </div>
+                    </li>
+                    <li>Persuasion 12 <button popovertarget="persuasion">🛈</button>
+                        <div id="persuasion" popover>
+                            <hgroup>
+                                <div><strong>Persuasion</strong></div>
+                                <div>Regular</div>
+                                <div>4 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: 1 min.</div>
+                                <div><strong>Cost</strong>: Twice the bonus to be added to the roll (max 5); same to
+                                    maintain</div>
+                            </hgroup>
+                            <p>
+                                Used when a reaction roll is
+                                required, this spell makes the subject
+                                more likely to react favorably.
+                            </p>
+                            <p>
+                                Resisted by Will.
+                            </p>
+                        </div>
+                    </li>
+                    <li>Recover Energy 15 <button popovertarget="recoverenergy">🛈</button>
+                        <div id="recoverenergy" popover>
+                            <hgroup>
+                                <div><strong>Recover Energy</strong></div>
+                                <div>Special</div>
+                                <div>8 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Cost</strong>: None</div>
+                            </hgroup>
+                            <p>
+                                A mage who knows this spell
+                                at skill 15 or higher recovers 1 FP
+                                every 5 minutes.
+                            </p>
+                            <p>
+                                Includes +2 from Mind Control Magery.
+                            </p>
+                        </div>
+                    </li>
+                    <li>Sense Danger 10 <button popovertarget="sensedanger">🛈</button>
+                        <div id="sensedanger" popover>
+                            <hgroup>
+                                <div><strong>Sense Danger</strong></div>
+                                <div>Information</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Duration</strong>: Instant</div>
+                                <div><strong>Cost</strong>: 3</div>
+                            </hgroup>
+                            <p>
+                                Tells the caster if any immediate
+                                danger is nearby.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>Sense Emotion 12 <button popovertarget="senseemotion">🛈</button>
+                        <div id="senseemotion" popover>
+                            <hgroup>
+                                <div><strong>Sense Emotion</strong></div>
+                                <div>Regular</div>
+                                <div>4 points</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Cost</strong>: 2</div>
+                            </hgroup>
+                            <p>
+                                Know what emotions the subject is
+                                feeling at the moment.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>Sense Foes 10 <button popovertarget="sensefoes">🛈</button>
+                        <div id="sensefoes" popover>
+                            <hgroup>
+                                <div><strong>Sense Foes</strong></div>
+                                <div>Information; Area</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <div><strong>Base Cost</strong>: 1 (minimum 2)</div>
+                            </hgroup>
+                            <p>
+                                Tells the caster if the subject has
+                                hostile intent, and what the degree of
+                                hostility is. Can be cast on one person
+                                or a whole area.
+                            </p>
+
+                        </div>
+                    </li>
+                    <li>Spasm 10 <button popovertarget="spasm">🛈</button>
+                        <div id="spasm" popover>
+                            <hgroup>
+                                <div><strong>Spasm</strong></div>
+                                <div>Regular</div>
+                                <div>1 point</div>
+                            </hgroup>
+                            <hgroup>
+                                <duration><strong>Duration</strong>: Instant</duration>
+                                <div><strong>Cost</strong>: 2</div>
+                            </hgroup>
+                            <p>
+                                Can be directed against any of the
+                                subject’s voluntary muscles. Directed
+                                against a hand, it causes the subject to
+                                drop whatever he is holding.
+                            </p>
+                            <p>
+                                Resisted by HT.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+        </section>
+
+        <section id="gear">
+            <details open>
+                <summary>Gear</summary>
+                <ul>
+                    <li>
+                        Wizard’s wand (baton enchanted with Staff spell) mounted with a 2-point One-College (Mind
+                        Control) Powerstone
+                    </li>
+                </ul>
+            </details>
+        </section>
+    </main>
+</body>
+
+</html>
