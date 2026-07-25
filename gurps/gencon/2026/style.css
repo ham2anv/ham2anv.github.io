@@ -16,7 +16,7 @@ header {
 }
 
 button {
-    appearance: unset;
+    appearance: none;
     border: none;
     background-color: Canvas;
     /* line-height: 1; */
