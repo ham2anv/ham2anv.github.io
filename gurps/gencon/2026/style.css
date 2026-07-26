@@ -86,7 +86,28 @@ s {
     color: lightgray;
 }
 
+footer {
+    display: none;
+}
+
+li:has(mark)::marker {
+    content: "✔️"
+}
+
+mark {
+    background-color: Canvas;
+    text-decoration: 2px underline blue;
+}
+
 @media print {
+
+    @page {
+        margin: 0.5in;
+    }
+
+    body {
+        width: auto;
+    }
 
     button {
         display: none;
@@ -97,8 +118,15 @@ s {
         break-inside: avoid-page;
     }
 
+    /* ul {
+        list-style: none;
+        padding: 0;
+    } */
+
     li {
         break-inside: avoid-column;
+        padding-inline-start: 1em;
+        text-indent: -1em;
     }
 
     *:not(li)>ul:has(li:nth-child(2)) {
@@ -113,4 +141,17 @@ s {
         display: none;
     }
 
+    details:not([open]) {
+        display: none;
+    }
+
+    footer {
+        display: block;
+
+        img {
+            display: block;
+            width: 2in;
+            margin-inline: auto;
+        }
+    }
 }
